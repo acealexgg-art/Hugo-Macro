@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "hugoautomation",
+  "version": "${version}",
+  "name": "Hugo Automation",
+  "description": "Sell- und Spawner-Automation fuer HugoSMP. Erkennt Menues und Slots, klickt nie blind.",
+  "authors": ["Du"],
+  "license": "MIT",
+  "icon": "assets/hugoautomation/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["de.hugosmp.automation.HugoAutomationClient"],
+    "modmenu": ["de.hugosmp.automation.HugoAutomationModMenu"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
